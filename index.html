@@ -12,9 +12,10 @@
     </head>
     <body>
         <header>
-            <div id="logo">
-                <img src="img/logo.jpeg" alt="logo da Cantina Nonna Gemma">
-            </div>
+            <section class="inicio"></section>
+                <div id="logo">
+                    <img src="nonnaGemma/img/logo.jpg" alt="logo da Cantina Nonna Gemma">
+                </div>
             <nav>
                 <a href="">Início</a>
                 <a href="">Cardápio</a>
@@ -23,23 +24,116 @@
                 <a href="">Contato</a>
             </nav>
                 <section class="hero">
-                    <img src="img/fundo-hero.jpg"alt="um prato de macarrão talharim,
-                     ao molho bolonhesa com duas folhas de manjericão como empratamento">
+                    <img src="nonnaGemma/img/fundo-hero.jpeg"alt="um prato de macarrão talharim,
+                     ao molho bolonhesa com duas folhas de manjericão como empratamento" width="1000" height="1000">
                     <div class="lateral-br">
-                        <img src="" alt="bandeira do Brasil">
+                        <img src="nonnaGemma/img/bandeira-br.jpeg" alt="bandeira do Brasil">
                     </div>
                     <div class="lateral-ita">
-                        <img src="" alt="bandeira da Itália">
+                        <img src="nonnaGemma/img/bandeira-ita.jpeg" alt="bandeira da Itália">
                     </div>
                 </section>
+            </section>
         </header>
         <main>
-            <div class="cardapio">
-                <button ></button>
+            <section class="cardapio">
+                <div class="cardapio">
+                    <h1>Cardápio</h1>
+                    <p>Mangia bene, vive felice!</p>
+                    <button>Massas</button>
+                    <button>Molhos</button>
+                    <button>Sobremesas</button>
+                </div>    
+                    <section class="esquerda-massas">
+                        <div class="massa01">
+                            <img src="nonnaGemma/img/massa01.jpg"alt="Prato de nhoque">
+                            <h2>Nhoque da Vovó</h2>
+                            <h3>Batata macia, com molho à escolha</h3>
+                            <p>R$48,00</p>
+                        </div>
+                        <div class="massa02">
+                            <img src="nonnaGemma/img/massa02.webp"alt="Fettucine ao sugo">
+                            <h2>Fettucine ao sugo</h2>
+                            <p>Feito a mão todos os dias, com manjericão</p>
+                            <p>R$46,00</p>
+                        </div>
+                    </section>
+                    <section class="direita-massas">
+                         <div class="massa03">
+                            <img src="nonnaGemma/img/massa03.webp"alt="Ravióle de Ricota">
+                            <h2>Ravióle de Ricota</h2>
+                            <p>Recheio cremoso com molho de queijo e sálvia.</p>
+                            <p>R$49,00</p>
+                         </div>
+                        <div class="massa04">
+                            <img src="nonnaGemma/img/massa04.webp"alt="Lasanha da Nonna">
+                            <h2>Lasanha da Nonna</h2>
+                            <p>Massa fresca, molho de tomate e muito queijo.</p>
+                            <p>R$42,00</p>
+                        </div>
+                    </section>
+            </section>
+            <section class="nossa-historia">
+                <h1>A história da Nonna Gemma</h1>
+                <p>A Cantina Nonna Gemma nasceu numa casa de esquina no Bixiga, onde <br>
+                a mesa nunca fica vazia. Cada prato segue as receitas que Gemma trouxe<br>
+                da Itália e guardou num caderno de capa gasta. As panelas, as fotos e as <br>
+                toalhas xadrez que enfeitam o salão vieram da família e de amigos. Por<br>
+                isso, o lugar é perfeito para aniversários, encontros e almoços de domingo.</p>
+                <img src="" alt="Nonna Gemma cozinhando">
+            </section>
+            <section class="Reservas">
+                <div class="box-reserva">
+                <h2>Faça sua Reserva</h2>
+                <h3>La tavola ti aspetto</h3>
+                <p>Escolha o dia e horário. Funcionamos de terça à domingo das 11:00 às 23:00</p>
+                <fieldset>
 
-            </div>
+                <br>
+
+                    <div class="data">
+                        <label for="data"><i class="fa-regular fa-calendar"></i>Data:</label>
+                        <input type="date" id="data" name="data" required>
+                    </div>
+                <div class="horario">
+                    <label for="horario"><i class="fa-regular fa-clock"></i>Horário:</label>
+                    <input type="time" id="horario" name="horario" required>
+                </div>
+
+                <br>
+
+                <div class="pessoas">
+                <label for="pessoas"><i class="fa-solid fa-users"></i>Número de Pessoas:</label>
+                <select id="pessoas" name="pessoas" required>
+                    <option value="" disabled selected>Selecione...</option>
+                    <option value="1">1 Pessoa</option>
+                    <option value="2">2 Pessoas</option>
+                    <option value="3">3 Pessoas</option>
+                    <option value="4">4 Pessoas</option>
+                    <option value="5">5 Pessoas</option>
+                    <option value="6+">6 ou mais pessoas</option>
+                </select>
+                </div>
+
+                <br>
+
+                <div class="nome">
+                    <label for="nome"><i class="fa-solid fa-user"></i>Nome Completo:</label>
+                    <input type="text" id="nome" name="nome" required placeholder="Digite seu nome">
+                </div>
+
+                <br>
+                    <div class="telefone">
+                        <label for="telefone" id="telefone"><i class="fa-solid fa-phone"></i>Telefone:</label>
+                        <input  type="tel" inputmode="numeric" pattern="[0-9]*" min="0" 
+                        max="11" id="telefone" name="telefone" placeholder="(00)00000-0000" required>
+                    </div>
+                    <form action="/confirmar-reserva" method="POST"></form>
+            </fieldset>
+            </section>
         </main>
         <footer>
         </footer>
+        
     </body>    
 </html>
