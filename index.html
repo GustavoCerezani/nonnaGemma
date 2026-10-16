@@ -12,10 +12,9 @@
     </head>
     <body>
         <header>
-            <section class="inicio"></section>
-                <div id="logo">
-                    <img src="nonnaGemma/img/logo.jpg" alt="logo da Cantina Nonna Gemma">
-                </div>
+            <div id="logo">
+                <img src="nonnaGemma/img/logo.jpg" alt="logo da Cantina Nonna Gemma">
+            </div>
             <nav>
                 <a href="">Início</a>
                 <a href="">Cardápio</a>
@@ -23,17 +22,16 @@
                 <a href="">Reservas</a>
                 <a href="">Contato</a>
             </nav>
-                <section class="hero">
-                    <img src="nonnaGemma/img/fundo-hero.jpeg"alt="um prato de macarrão talharim,
-                     ao molho bolonhesa com duas folhas de manjericão como empratamento" width="1000" height="1000">
+                <div class="hero">
+                    <img src="nonnaGemma/img/fundo-hero.jpg"alt="um prato de macarrão talharim,
+                    ao molho bolonhesa com duas folhas de manjericão como empratamento" width="1000" height="1000">
                     <div class="lateral-br">
-                        <img src="nonnaGemma/img/bandeira-br.jpeg" alt="bandeira do Brasil">
+                        <img src="nonnaGemma/img/bandeira-br.jpg" alt="bandeira do Brasil">
                     </div>
                     <div class="lateral-ita">
-                        <img src="nonnaGemma/img/bandeira-ita.jpeg" alt="bandeira da Itália">
+                        <img src="nonnaGemma/img/bandeira-ita.jpg" alt="bandeira da Itália">
                     </div>
-                </section>
-            </section>
+                </div>
         </header>
         <main>
             <section class="cardapio">
@@ -52,7 +50,7 @@
                             <p>R$48,00</p>
                         </div>
                         <div class="massa02">
-                            <img src="nonnaGemma/img/massa02.webp"alt="Fettucine ao sugo">
+                            <img src="nonnaGemma/img/massa02.jpg"alt="Fettucine ao sugo">
                             <h2>Fettucine ao sugo</h2>
                             <p>Feito a mão todos os dias, com manjericão</p>
                             <p>R$46,00</p>
@@ -60,13 +58,13 @@
                     </section>
                     <section class="direita-massas">
                          <div class="massa03">
-                            <img src="nonnaGemma/img/massa03.webp"alt="Ravióle de Ricota">
+                            <img src="nonnaGemma/img/massa03.jpg"alt="Ravióle de Ricota">
                             <h2>Ravióle de Ricota</h2>
                             <p>Recheio cremoso com molho de queijo e sálvia.</p>
                             <p>R$49,00</p>
                          </div>
                         <div class="massa04">
-                            <img src="nonnaGemma/img/massa04.webp"alt="Lasanha da Nonna">
+                            <img src="nonnaGemma/img/massa04.jpg"alt="Lasanha da Nonna">
                             <h2>Lasanha da Nonna</h2>
                             <p>Massa fresca, molho de tomate e muito queijo.</p>
                             <p>R$42,00</p>
@@ -80,32 +78,34 @@
                 da Itália e guardou num caderno de capa gasta. As panelas, as fotos e as <br>
                 toalhas xadrez que enfeitam o salão vieram da família e de amigos. Por<br>
                 isso, o lugar é perfeito para aniversários, encontros e almoços de domingo.</p>
-                <img src="" alt="Nonna Gemma cozinhando">
+                <div class="historia-lateral">
+                    <img src="nonnaGemma/img/nonnaGemma.jpg" alt="Nonna Gemma cozinhando">
+                </div>
             </section>
             <section class="Reservas">
-                <div class="box-reserva">
+                <div class="caixa-reserva">
                 <h2>Faça sua Reserva</h2>
                 <h3>La tavola ti aspetto</h3>
                 <p>Escolha o dia e horário. Funcionamos de terça à domingo das 11:00 às 23:00</p>
                 <fieldset>
-
                 <br>
-
+                <br>
                     <div class="data">
                         <label for="data"><i class="fa-regular fa-calendar"></i>Data:</label>
                         <input type="date" id="data" name="data" required>
                     </div>
+                <br>
+                <br>
                 <div class="horario">
                     <label for="horario"><i class="fa-regular fa-clock"></i>Horário:</label>
                     <input type="time" id="horario" name="horario" required>
                 </div>
-
                 <br>
-
+                <br>
                 <div class="pessoas">
                 <label for="pessoas"><i class="fa-solid fa-users"></i>Número de Pessoas:</label>
                 <select id="pessoas" name="pessoas" required>
-                    <option value="" disabled selected>Selecione...</option>
+                    <option value="" disabled selected>Mesa para...</option>
                     <option value="1">1 Pessoa</option>
                     <option value="2">2 Pessoas</option>
                     <option value="3">3 Pessoas</option>
@@ -114,26 +114,64 @@
                     <option value="6+">6 ou mais pessoas</option>
                 </select>
                 </div>
-
                 <br>
-
+                <br>
                 <div class="nome">
                     <label for="nome"><i class="fa-solid fa-user"></i>Nome Completo:</label>
                     <input type="text" id="nome" name="nome" required placeholder="Digite seu nome">
                 </div>
-
+                <br>
                 <br>
                     <div class="telefone">
                         <label for="telefone" id="telefone"><i class="fa-solid fa-phone"></i>Telefone:</label>
                         <input  type="tel" inputmode="numeric" pattern="[0-9]*" min="0" 
                         max="11" id="telefone" name="telefone" placeholder="(00)00000-0000" required>
                     </div>
-                    <form action="/confirmar-reserva" method="POST"></form>
+                    <br>
+                    <button>Confirmar reserva<i class="fa-solid fa-arrow-right"></i></button>
+                    <form action="/confirmar-reserva" method="POST">
+                    </form>
+                </form>
             </fieldset>
+                <h4>Ti aspettiamo!</h4>
+                <p>Um lugar especial para compartilhar bons <br>
+                momentos e sabores italianos. <br>
+                Dal 1963, con amore.</p>
+            </section>
+            <section class="contato">
+            <div id="logo">
+                <img src="" alt="logo da Cantina Nonna Gemma">
+            </div> 
+            <h2>Contato e Localização</h2>
+            <p>Venha nos visitar ou fale com a gente</p>
+            <h3><i class="fa-solid fa-location-dot"></i>Endereço</h3>
+            <h4>Rua das flores 123, Bixiga, São Paulo-SP</h4>
+
+            <h3><i class="fa-regular fa-clock"></i>Horário</h3>
+            <h4>Terça à Domingo das 11:00 às 23:00</h4>
+            <h3><i class="fa-solid fa-phone"></i>Telefone/Whatsapp</h3>
+            <h4>(11)95555-9000</h4>
+            <div class="localizacao">
+                <img src="" alt="Mapa mostrando a exata rua onde a Cantina da Nonna Gemma fica">
+            </div>
+            <h4>Ti aspettiamo!</h4>
+            <p>Será um prazer, receber você em nossa mesa.</p>
+
+
             </section>
         </main>
         <footer>
+            <div class="footer-esquerda">
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-facebook"></i>
+            </div>
+            <div class="footer-direita">
+                <p>Projeto fictício para fins de estudo.</p>
+            </div>
+            <div class="footer-fundo">
+                <p>© Direitos reservados a Cantina Nonna Gemma - 2026.</p>
+            </div>
         </footer>
-        
+        <script src="https://kit.fontawesome.com/eb03b9e321.js" crossorigin="anonymous"></script>
     </body>    
 </html>
