@@ -16,11 +16,11 @@
                 <img src="img/logo.jpg" alt="logo da Cantina Nonna Gemma">
             </div>
             <nav>
-                <a href="">Início</a>
-                <a href="">Cardápio</a>
-                <a href="">Nossa História</a>
-                <a href="">Reservas</a>
-                <a href="">Contato</a>
+                <a href="#inicio">Início</a>
+                <a href="#cardapio">Cardápio</a>
+                <a href="#nossahistoria">Nossa História</a>
+                <a href="#reservas">Reservas</a>
+                <a href="#contato">Contato</a>
             </nav>
                 <div class="hero">
                     <img src="img/fundo-hero.jpg"alt="um prato de macarrão talharim,
@@ -35,40 +35,104 @@
         </header>
         <main>
             <section class="cardapio">
-                <div class="cardapio">
+                <div class="cardapio-topo">
                     <h1>Cardápio</h1>
                     <p>Mangia bene, vive felice!</p>
-                    <button>Massas</button>
-                    <button>Molhos</button>
-                    <button>Sobremesas</button>
+                    <nav class="cardapio-itens">
+                        <a href="#cardapio-massas"></a><button type="button">Massas</button>
+                        <a href="#cardapio-molhos"></a><button type="button">Molhos</button>
+                        <a href="#cardapio-sobremesas"></a><button type="button">Sobremesas</button>
+                    </nav>
                 </div>    
-                    <section class="esquerda-massas">
+                <section id="#cardapio-massas">
+                    <div class="esquerda-massas">
                         <div class="massa01">
                             <img src="img/massa01.jpg"alt="Prato de nhoque">
                             <h2>Nhoque da Vovó</h2>
                             <p>Batata macia, com molho à escolha</p>
-                            <p>R$48,00</p>
+                            <h5>R$48,00</h5>
                         </div>
-                        <div class="massa02">
-                            <img src="img/massa02.jpg"alt="Fettucine ao sugo">
-                            <h2>Fettucine ao sugo</h2>
-                            <p>Feito a mão todos os dias, com manjericão</p>
-                            <p>R$46,00</p>
-                        </div>
-                    </section>
-                    <section class="direita-massas">
-                         <div class="massa03">
-                            <img src="img/massa03.jpg"alt="Ravióle de Ricota">
-                            <h2>Ravióle de Ricota</h2>
-                            <p>Recheio cremoso com molho de queijo e sálvia.</p>
-                            <p>R$49,00</p>
-                         </div>
-                        <div class="massa04">
-                            <img src="img/massa04.jpg"alt="Lasanha da Nonna">
-                            <h2>Lasanha da Nonna</h2>
-                            <p>Massa fresca, molho de tomate e muito queijo.</p>
-                            <p>R$42,00</p>
-                        </div>
+                            <div class="massa02">
+                                <img src="img/massa02.jpg"alt="Fettucine ao sugo">
+                                <h2>Fettucine ao sugo</h2>
+                                <p>Feito a mão todos os dias, com manjericão</p>
+                                <h5>R$46,00</h5>
+                            </div>   
+                    </div> 
+                        <section class="direita-massas">
+                            <div class="massa03">
+                                <img src="img/massa03.jpg"alt="Ravióle de Ricota">
+                                <h2>Ravióle de Ricota</h2>
+                                <p>Recheio cremoso com molho de queijo e sálvia.</p>
+                                <h5>R$49,00</h5>
+                            </div>
+                            <div class="massa04">
+                                <img src="img/massa04.jpg"alt="Lasanha da Nonna">
+                                <h2>Lasanha da Nonna</h2>
+                                <p>Massa fresca, molho de tomate e muito queijo.</p>
+                                <h5>R$42,00</h5>
+                            </div>
+                        </section>
+                </section>
+                    <section id="#cardapio-molhos">
+                            <div class="esquerda-molhos">
+                                <div class="molhos01">
+                                    <img src="img/molho01.jpg"alt="Sugo clássico">
+                                    <h2>Sugo clássico</h2>
+                                    <p>Tomate maduro e manjericão.</p>
+                                    <h5>R$12,00</h5>
+                                </div>
+                                    <div class="molho02">
+                                        <img src="img/molho02.jpg"alt="Bolonhesa da casa">
+                                        <h2>Bolonhesa da casa</h2>
+                                        <p>Carne moída com molho de tomate maduro e ervas.</p>
+                                        <h5>R$16,00</h5>
+                                    </div>   
+                            </div> 
+                                <section class="direita-molhos">
+                                    <div class="molhos03">
+                                        <img src="img/molho03.jpg"alt="Pesto de manjericão">
+                                        <h2>Pesto de manjericão</h2>
+                                        <p>Manjericão, nozes e azeite.</p>
+                                        <h4>R$14,00</h4>
+                                    </div>
+                                    <div class="molhos04">
+                                        <img src="img/molho04.jpg"alt="Quatro queijos">
+                                        <h2>Quatro queijos</h2>
+                                        <p>Mussarela, parmesão, gorgonzola e provolone.</p>
+                                        <h5>R$18,00</h5>
+                                    </div>
+                            </section>
+                    </section>        
+                    <section id="#cardapio-sobremesas">
+                            <div class="esquerda-sobremesa">
+                                <div class="sobremesa01">
+                                    <img src="img/sobremesa01.jpg"alt="Tiramisù da Casa">
+                                    <h2>Tiramisù da Casa</h2>
+                                    <p>Café, mascarpone e a receita secreta da vó.</p>
+                                    <h5>R$24,00</h5>
+                                </div>
+                                    <div class="sobremesa02">
+                                        <img src="img/sobremesa02.jpg"alt="Cannoli">
+                                        <h2>Cannoli</h2>
+                                        <p>Massa crocante com recheio de ricota doce.</p>
+                                        <h5>R$18,00</h5>
+                                    </div>   
+                            </div> 
+                                <section class="direita-sobremesa">
+                                    <div class="sobremesa03">
+                                        <img src="img/sobremesa03.jpg"alt="Panna Cotta">
+                                        <h2>Panna Cotta</h2>
+                                        <p>Creme leve com calda de frutas vermelhas.</p>
+                                        <h5>R$22,00</h5>
+                                    </div>
+                                    <div class="sobremesa04">
+                                        <img src="img/sobremesa04.jpg"alt="Gelato Artesanal">
+                                        <h2>Gelato Artesanal</h2>
+                                        <p>Três bolas à escolha, como pistache, stracciatella e limão siciliano.</p>
+                                        <h5>R$18,00</h5>
+                                    </div>
+                            </section>
                     </section>
             </section>
             <section class="nossa-historia">
@@ -79,7 +143,7 @@
                 toalhas xadrez que enfeitam o salão vieram da família e de amigos. Por<br>
                 isso, o lugar é perfeito para aniversários, encontros e almoços de domingo.</p>
                 <div class="historia-lateral">
-                    <img src="img/nonnaGemma.jpg" alt="Nonna Gemma cozinhando">
+                    <img src="/img/nonna.jpg" alt="Nonna Gemma cozinhando">
                 </div>
             </section>
             <section class="reservas">
