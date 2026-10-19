@@ -1,4 +1,637 @@
-#logo{
-    height:50px;
-    width:50px;
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/*-----------------------
+HOMEPAGE
+-----------------------*/
+
+header{
+    display: flex;
+    flex-direction: row;
+    background-color: #FFF8ED;
+    width: auto;
+    height: 135px;
+}
+
+#logoHeader{
+    display: flex;
+    height: 135px;
+    padding: 0px 0px 5px 30px;
+}
+
+nav{
+    display: flex;
+    margin-left: auto;
+    align-items: center;
+    font-weight: bold;
+    padding: 30px 40px 0px 0px;
+    gap: 25px;
+}
+
+nav a{
+    font-family: Lato;
+    color: #700404;
+    text-decoration: none;
+    font-size: 25px;
+}
+
+.homepage{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(to top,rgba(0, 0, 0, 0.8),rgba(255, 254, 254, 0)), url(img/fundo.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    gap: 10px;
+    padding: 0 40px 40px 0;
+    box-sizing: border-box;
+}
+
+.homepage img {
+    width: 67px;
+    height: 47px;
+    padding: 0;
+    flex-shrink: 0;
+}
+
+/*-----------------------
+CARDAPIO
+-----------------------*/
+.cardapio{
+    height: 100vh;
+    width: auto;
+    background-color: #FFF8ED;
+    display: flex;
+    flex-direction: column;
+}
+
+.cardapio-topo h1{
+    color: #007739;
+    font-family: Playfair Display;
+    font-weight: medium;
+    font-size: 60px;
+    padding-left: 50px;
+    padding-top: 5px;
+}
+
+.cardapio-topo p{
+    color: #9E4A55;
+    font-family: Dancing Script;
+    font-weight: bold;
+    font-size: 35px;
+    padding-left: 50px;
+}
+
+/*-----------------------
+CARDAPIO - BOTÕES
+-----------------------*/
+.botoes-cardapio{
+    display: flex;
+    padding-left: 100px;
+    gap: 50px;
+}
+
+.btn-massas{
+    color: #FFF8ED;
+    background-color: #700404;
+    width: 130px;
+    height: 60px;
+    border: none 13px;
+    border-radius: 20px;
+    font-family: Playfair Display;
+    font-size: 30px;
+}
+
+.btn-massas:hover{
+    cursor: pointer;
+    color: #FFF8ED;
+    background-color: #700404;
+}
+
+.btn-molhos{
+    color: #700404;
+    background-color: #FFF8ED;
+    width: 130px;
+    height: 60px;
+    border: none color(#700404) 13px;
+    border-radius: 20px;
+    font-family: Playfair Display;
+    font-size: 30px;
+}
+
+.btn-molhos:hover{
+    cursor: pointer;
+    color: #FFF8ED;
+    background-color: #700404;
+}
+
+.btn-sobremesas{
+    color: #700404;
+    background-color: #FFF8ED;
+    width: 180px;
+    height: 60px;
+    border: none color(#700404) 13px;
+    border-radius: 20px;
+    font-family: Playfair Display;
+    font-size: 30px;
+}
+
+.btn-sobremesas:hover{
+    cursor: pointer;
+    color: #FFF8ED;
+    background-color: #700404;
+}
+
+/*------------------------------
+CARDAPIO - MASSAS SECTION GERAL
+---------------------------------*/
+
+.massas{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.valor{
+    display: flex;
+    align-items: center;
+    font-family: inter;
+    font-weight: 600;
+    font-size: 20px;
+    color: #700404;
+    flex-shrink: 0;
+    white-space: nowrap
+}
+
+/*-----------------------
+CARDAPIO - MASSAS ESQUERDA
+-----------------------*/
+
+.esquerda-massas{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.esquerda-massas img{
+    display: flex;
+    flex-shrink: 0;
+    width: 180px;
+    height: 160px;
+    border-radius: 20px;
+}
+
+.esquerda-massas h2{
+    font-family: Playfair Display;
+    font-weight: 600;
+    font-size: 30px;
+    color: black;
+}
+
+/*-------------------------------
+CARDAPIO - MASSAS ESQUERDA NHOQUE
+--------------------------------*/
+
+#massa1{
+    border: 1px solid #D9A5A0;
+    border-radius: 20px;
+    height: 160px;
+    width: 600px;
+    background-color: #D9A5A0;
+    display: flex;
+    gap: 10px;
+}
+
+#massa1 div{
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+#massa1 div p{
+    margin-top:15px;
+    margin-bottom: 100px;
+    text-align: left;
+    font-size: 20px;
+}
+
+/*---------------------------------
+CARDAPIO - MASSAS ESQUERDA FETTUCINE
+---------------------------------*/
+
+#massa2{
+    border: 1px solid #D9A5A0;
+    border-radius: 20px;
+    height: 160px;
+    width: 600px;
+    background-color: #D9A5A0;
+    display: flex;
+    gap: 10px;
+}
+
+#massa2 div{
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+#massa2 div p{
+    margin-top:15px;
+    margin-bottom: 100px;
+    text-align: left;
+    font-size: 20px;
+}
+
+/*-----------------------
+CARDAPIO - MASSAS DIREITA
+-----------------------*/
+
+.direita-massas{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.direita-massas img{
+    display: flex;
+    flex-shrink: 0;
+    width: 185px;
+    height: 160px;
+    border-radius: 20px;
+}
+
+.direita-massas h2{
+    font-family: Playfair Display;
+    font-weight: 600;
+    font-size: 30px;
+    color: black;
+}
+
+
+/*-------------------------------
+CARDAPIO - MASSAS DIREITA RAVIÓLE
+--------------------------------*/
+
+#massa3{
+    border: 1px solid #D9A5A0;
+    border-radius: 20px;
+    height: 160px;
+    width: 600px;
+    background-color: #D9A5A0;
+    display: flex;
+    gap: 10px;
+}
+
+#massa3 div{
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+#massa3 div p{
+    margin-top:15px;
+    margin-bottom: 100px;
+    text-align: left;
+    font-size: 20px;
+}
+
+/*-------------------------------
+CARDAPIO - MASSAS DIREITA LASANHA
+--------------------------------*/
+
+#massa4{
+    border: 1px solid #D9A5A0;
+    border-radius: 20px;
+    height: 160px;
+    width: 600px;
+    background-color: #D9A5A0;
+    display: flex;
+    gap: 10px;
+}
+
+#massa4 div{
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+#massa4 div p{
+    margin-top:15px;
+    margin-bottom: 100px;
+    text-align: left;
+    font-size: 20px;
+}
+
+/*-------------------------------
+SECTION - NOSSA HISTÓRIA
+--------------------------------*/
+.nossa-historia{ 
+    background-image: url(img/fundoNossaHistoria.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+.nossa-historia img{
+    width: 700px;
+    height: 430px;
+    border: 5px solid #D3AF37;
+    border-radius: 24px;
+}
+
+.nossa-historia h1{
+    color: white;
+    font-family: Dancing Script;
+    font-weight: bold;
+    font-size: 50px;
+}
+
+.nossa-historia p{
+    color: white;
+    font-family: Playfair Display;
+    font-weight: medium;
+    font-size: 25px;
+}
+
+/*-------------------------------
+SECTION - RESERVAS
+--------------------------------*/
+
+.reservas {
+    background-color: #FFF8ED;
+    background-image: url("img/fundoReservas.jpg");
+    background-size: cover;
+    background-position: center;
+    padding: 40px 32px 56px;
+}
+
+.reservas h2,
+.reservas h3,
+.reservas p,
+.reservas h4 {
+    margin: 0;
+}
+
+.reservas h2 {
+    color: #007739;
+    font-family: Playfair Display;
+    font-size: 48px;
+    font-weight: 700;
+}
+
+.reservas h3 {
+    margin-top: 8px;
+    color: #9E4A55;
+    font-family: Dancing Script;
+    font-size: 28px;
+    font-weight: 500;
+}
+
+.reservas-descricao {
+    color: #000;
+    font-family: Playfair Display;
+    font-size: 16px;
+}
+
+.reservas-conteudo {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    width: 100%;
+    max-width: 790px;
+    margin: 20px auto 0;
+}
+
+/*-------------------------------
+FORMULÁRIO
+--------------------------------*/
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    flex: 0 0 460px;
+    min-width: 0;
+    margin: 0;
+    padding: 26px 24px 22px;
+    border: 2px solid #700404;
+    border-radius: 16px;
+    background-color: #FFF8ED;
+}
+
+.formulario .campo {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    min-width: 0;
+}
+
+.formulario label {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #000;
+    font-family: "Playfair Display", serif;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.formulario label i {
+    width: 20px;
+    text-align: center;
+    color: #000;
+}
+
+.formulario input,
+.formulario select {
+    width: 100%;
+    min-width: 0;
+    height: 32px;
+    padding: 3px 8px;
+    border: 1px solid #700404;
+    border-radius: 8px;
+    background-color: #FFF8ED;
+    color: #700404;
+    font-family: "Inter", sans-serif;
+    font-size: 14px;
+}
+
+.linha-dupla {
+    display: flex;
+    gap: 40px;
+}
+
+.linha-dupla .campo {
+    flex: 1;
+}
+
+.formulario .btn-confirmar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    width: 100%;
+    min-height: 38px;
+    margin-top: 24px;
+    padding: 8px;
+    border: none;
+    border-radius: 8px;
+    background-color: #700404;
+    color: #FFF8ED;
+    font-family: Playfair Display;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.formulario .btn-confirmar i {
+    color: inherit;
+}
+
+.formulario .btn-confirmar:hover {
+    background-color: #580303;
+}
+
+/*-------------------------------
+MENSAGEM À DIREITA
+--------------------------------*/
+
+.reserva-direita {
+    flex: 1;
+    min-width: 0;
+    color: #000;
+    font-family: "Playfair Display", serif;
+    font-size: 16px;
+    line-height: 1.4;
+}
+
+.reserva-direita h4 {
+    margin-bottom: 4px;
+    font-size: 16px;
+    font-weight: 800;
+}
+
+/*-------------------------------
+CONTATO E LOCALIZAÇÃO
+--------------------------------*/
+
+.contato {
+    background-color: #FFF8ED;
+    padding: 40px;
+    font-family: Playfair Display;
+}
+
+#logo2 img {
+    width: 280px;
+    height: auto;
+    margin-bottom: 30px;
+}
+
+.contato-info {
+    padding-left: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+}
+
+.contato-texto h2 {
+    padding-left: 10px;
+    margin: 10px;
+    font-size: 50px;
+    color: #007739;
+}
+
+.contato-texto .contato-subtitulo {
+    color: #700404;
+    margin-bottom: 30px;
+}
+
+.contato-texto h3 {
+    margin: 25px;
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+}
+
+.contato-texto p {
+    padding-left: 30px;
+    font-size: 20px;
+    color: black;
+}
+
+.contato-texto i {
+    color: #700404;
+}
+
+.contato-mapa {
+    width: auto;
+    max-width: 596px;
+    height: auto;
+    border-radius: 20px;
+}
+
+.contato-mensagem {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.contato-mensagem h3 {
+    padding-left: 60px;
+    display: flex;
+    font-family: Dancing Script;
+    font-size: 30px;
+    color: #700404;
+}
+
+.contato-mensagem p {
+    padding-left: 60px;
+    display: flex;
+    font-family: Playfair Display;
+    font-size: 20px;
+    color: #700404;
+}
+
+/*-------------------------------
+SECTION FOOTER
+--------------------------------*/
+
+footer {
+    background-color: #700404;
+    height: 160px;
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    padding: 30px;
+}
+
+.footer-esquerda {
+    color: white;
+    font-size: 45px;
+    gap: 200px;
+}
+
+.footer-direita {
+    color: white;
+    font-family: Playfair Display;
+    font-size: 20px;
+    font-weight: 400;
+    display: flex;
+    justify-content: left;
 }

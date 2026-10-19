@@ -1,45 +1,289 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device, initial-scale=1.0">
-        <meta name="keywords" content="HTML, CSS">
-        <link rel="stylesheet" href="style.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">>
-        <title>Cantina Nonna Gemma</title>
-    </head>
-    <body>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device, initial-scale=1.0">
+    <meta name="keywords" content="HTML, CSS">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="style.css">
+    <title>Cantina Nonna Gemma</title>
+    <link rel="icon" href="img/logoaba.jpg" type="image/png">
+</head>
+
+<body>
+    <!--HOMEPAGE-->
+    <section class="hero"> <!--HERO - HOME E CARDÁPIO-->
         <header>
-            <div id="logo">
-                <img src="img/logo.jpeg" alt="logo da Cantina Nonna Gemma">
-            </div>
-            <nav>
-                <a href="">Início</a>
-                <a href="">Cardápio</a>
-                <a href="">Nossa História</a>
-                <a href="">Reservas</a>
-                <a href="">Contato</a>
+            <img id="logoHeader" src="img/logo.jpg" alt="logo da Cantina Nonna Gemma">
+            <nav> 
+                <a href="#inicio">Início</a>
+                <a href="#cardapio">Cardápio</a>
+                <a href="#nossahistoria">Nossa história</a>
+                <a href="#reservas">Reservas</a>
+                <a href="#contato">Contato</a>
             </nav>
-                <section class="hero">
-                    <img src=""alt="um prato de macarrão talharim,
-                    ao molho bolonhesa com duas folhas de manjericão como empratamento">
-                    <div class="lateral-br">
-                        <img src="" alt="bandeira do Brasil">
+        </header>
+        <section class="homepage" id="inicio">
+            <!--BANDEIRAS CANTO INFERIOR DIREITO-->
+            <img src="img/bandeira-br.jpg" alt="bandeira do Brasil">
+            <img src="img/bandeira-ita.jpg" alt="bandeira da Itália">
+        </section>
+        <main> 
+            <!--CARDÁPIO-->
+            <section class="cardapio" id="cardapio">
+                <div class="cardapio-topo">
+                    <h1>Cardápio</h1>
+                    <p>Mangia bene, vive felice!</p>
+                    <br>
+                    <br>
+                </div>
+                <!--BOTÕES-->
+                <div class="botoes-cardapio">
+                    <button class="btn-massas">Massas</button>
+                    <button class="btn-molhos">Molhos</button>
+                    <button class="btn-sobremesas">Sobremesas</button>
+                </div>
+                <br>
+                <br>
+                <!--CARDS - MASSAS-->
+                <section class="massas">
+                    <section class="esquerda-massas"> 
+                        <div id="massa1"> <!--NHOQUE-->
+                            <img src="img/massa01.jpg" alt="Prato de nhoque">
+                            <div>
+                                <h2>Nhoque da Vovó</h2>
+                                <p>Batata macia, com <br> molho à escolha.</p>
+                            </div>
+                            <p class="valor">
+                                R$48,00
+                            </p>
+                        </div>
+                        <div id="massa2"> <!--FETTUCINE-->
+                            <img src="img/massa02.jpg" alt="Fettucine ao sugo">
+                            <div>
+                                <h2>Fettucine ao sugo</h2>
+                                <p>Feito a mão todos os <br>dias, com manjericão.</p>
+                            </div>
+                            <p class="valor">
+                                R$46,00
+                            </p>
+                        </div>
+                    </section>
+                    <section class="direita-massas">
+                        <div id="massa3"> <!--RAVIÓLE-->
+                            <img src="img/massa03.jpg" alt="Ravióle de Ricota">
+                            <div>
+                                <h2>Ravióle de Ricota</h2>
+                                <p>Recheio cremoso com <br> molho de queijo e sálvia.</p>
+                            </div>
+                            <p class="valor">
+                                R$49,00
+                            </p>
+                        </div>
+                        <div id="massa4"> <!--LASANHA-->
+                            <img src="img/massa04.jpg" alt="Lasanha da Nonna">
+                            <div>
+                                <h2>Lasanha da Nonna</h2>
+                                <p>Massa fresca, molho <br>de tomate e muito queijo.</p>
+                            </div>
+                            <p class="valor">
+                                R$42,00
+                            </p>
+                        </div>
+                    </section>
+                </section>
+            </section>
+        </main>
+    </section>
+            <!--
+        <section id="#cardapio-molhos">
+            <div class="molhos01">
+                <img src="img/molho01.jpg" alt="Sugo clássico">
+                <h2>Sugo clássico</h2>
+                <p>Tomate maduro e manjericão.</p>
+                <h5>R$12,00</h5>
+            </div>
+            <div class="molho02">
+                <img src="img/molho02.jpg" alt="Bolonhesa da casa">
+                <h2>Bolonhesa da casa</h2>
+                <p>Carne moída com molho de tomate maduro e ervas.</p>
+                <h5>R$16,00</h5>
+            </div>
+        </section>
+        <section class="direita-molhos">
+            <div class="molhos03">
+                <img src="img/molho03.jpg" alt="Pesto de manjericão">
+                <h2>Pesto de manjericão</h2>
+                <p>Manjericão, nozes e azeite.</p>
+                <h4>R$14,00</h4>
+            </div>
+            <div class="molhos04">
+                <img src="img/molho04.jpg" alt="Quatro queijos">
+                <h2>Quatro queijos</h2>
+                <p>Mussarela, parmesão, gorgonzola e provolone.</p>
+                <h5>R$18,00</h5>
+            </div>
+        </section>
+        <section id="#cardapio-sobremesas">
+                <div class="sobremesa01">
+                    <img src="img/sobremesa01.jpg" alt="Tiramisù da Casa">
+                    <h2>Tiramisù da Casa</h2>
+                    <p>Café, mascarpone e a receita secreta da vó.</p>
+                    <h5>R$24,00</h5>
+                </div>
+                <div class="sobremesa02">
+                    <img src="img/sobremesa02.jpg" alt="Cannoli">
+                    <h2>Cannoli</h2>
+                    <p>Massa crocante com recheio de ricota doce.</p>
+                    <h5>R$18,00</h5>
+                </div>
+            </div>
+        </section>
+                <section class="direita-sobremesa">
+                    <div class="sobremesa03">
+                        <img src="img/sobremesa03.jpg" alt="Panna Cotta">
+                        <h2>Panna Cotta</h2>
+                        <p>Creme leve com calda de frutas vermelhas.</p>
+                        <h5>R$22,00</h5>
                     </div>
-                    <div class="lateral-ita">
-                        <img src="" alt="bandeira da Itália">
+                    <div class="sobremesa04">
+                        <img src="img/sobremesa04.jpg" alt="Gelato Artesanal">
+                        <h2>Gelato Artesanal</h2>
+                        <p>Três bolas à escolha, como pistache, stracciatella e limão siciliano.</p>
+                        <h5>R$18,00</h5>
                     </div>
                 </section>
-        </header>
-        <main>
-            <div class="cardapio">
-                <button ></button>
-
+            </main>
+        </section>
+            </section>
+            -->
+    <!--NOSSA HISTORIA-->
+    <section class="nossa-historia" id="nossahistoria"> 
+        <div>
+            <h1>A história da Nonna Gemma</h1>
+            <br>
+            <br>
+            <p>A Cantina Nonna Gemma nasceu numa casa de<br>esquina no Bixiga, onde 
+                a mesa nunca fica vazia.<br> Cada prato segue as receitas que Gemma trouxe<br>
+                da Itália e guardou num caderno de capa gasta.<br> As panelas, as fotos e as 
+                toalhas xadrez que<br> enfeitam o salão vieram da família e de amigos.<br> Por
+                isso, o lugar é perfeito para aniversários,<br> encontros e almoços de domingo.</p>
+        </div>
+            <img src="/img/nonna.jpg" alt="Nonna Gemma cozinhando">
+    </section>
+    <!--RESERVAS-->
+    <section class="reservas" id="reservas">
+    <h2>Reservas</h2>
+    <h3>La tavola ti aspetto</h3>
+    <p class="reservas-descricao">
+        Escolha o dia e horário. Funcionamos de terça a domingo das 11:00 às 23:00.
+    </p>
+    <div class="reservas-conteudo">
+        <form class="formulario">
+            <div class="campo">
+                <label for="data">
+                    <i class="fa-regular fa-calendar"></i>
+                    Data
+                </label>
+                <input type="date" id="data" name="data" required>
             </div>
-        </main>
-        <footer>
-        </footer>
-    </body>    
-</html>
+            <div class="linha-dupla">
+                <div class="campo">
+                    <label for="horario">
+                        <i class="fa-regular fa-clock"></i>
+                        Horário
+                    </label>
+                    <input type="time" id="horario" name="horario" required>
+                </div>
+                <div class="campo">
+                    <label for="pessoas">
+                        <i class="fa-solid fa-users"></i>
+                        Pessoas
+                    </label>
+                    <select id="pessoas" name="pessoas" required>
+                        <option value="" disabled selected>Mesa para...</option>
+                        <option value="1">1 Pessoa</option>
+                        <option value="2">2 Pessoas</option>
+                        <option value="3">3 Pessoas</option>
+                        <option value="4">4 Pessoas</option>
+                        <option value="5">5 Pessoas</option>
+                        <option value="6+">6 ou mais pessoas</option>
+                    </select>
+                </div>
+            </div>
+            <div class="campo">
+                <label for="nome">
+                    <i class="fa-regular fa-user"></i>
+                    Nome completo
+                </label>
+                <input type="text" id="nome" name="nome" placeholder="Digite seu nome">
+            </div>
+            <div class="campo">
+                <label for="telefone">
+                    <i class="fa-solid fa-phone"></i>
+                    Telefone
+                </label>
+                <input type="tel" id="telefone" name="telefone" placeholder="(00)00000-0000" required>
+            </div>
+            <button type="submit" class="btn-confirmar">
+                Confirmar reserva
+                <i class="fa-solid fa-arrow-right"></i>
+            </button>
+        </form>
+        <div class="reserva-direita">
+            <h4>Ti aspettiamo!</h4>
+            <p>
+                Um lugar especial para compartilhar bons
+                momentos e sabores italianos.<br>
+                Dal 1963, con amore.
+            </p>
+        </div>
+    </div>
+    </section>
+    <section class="contato" id="contato">
+    <div id="logo2">
+        <img src="img/logo.jpg" alt="Logo da Cantina Nonna Gemma">
+    </div>
+    <div class="contato-info">
+        <div class="contato-texto">
+            <h2>Contato e Localização</h2>
+            <p class="contato-subtitulo">Venha nos visitar ou fale com a gente</p>
+            <h3>
+                <i class="fa-solid fa-location-dot"></i>
+                Endereço
+            </h3>
+            <p>Rua das Flores, 123, Bixiga, São Paulo-SP</p>
+            <h3>
+                <i class="fa-regular fa-clock"></i>
+                Horário
+            </h3>
+            <p>Terça a domingo, das 11:00 às 23:00</p>
+            <h3>
+                <i class="fa-solid fa-phone"></i>
+                Telefone/WhatsApp
+            </h3>
+            <p>(11) 95555-9000</p>
+        </div>
+        <img class="contato-mapa"
+        src="img/localizacao.jpg"
+        alt="Mapa da localização da Cantina Nonna Gemma">
+    </div>
+    <div class="contato-mensagem">
+        <h3>Ti aspettiamo!</h3>
+        <p>Será um prazer receber você em nossa mesa.</p>
+    </div>
+</section>
+    <footer>
+        <div class="footer-esquerda">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-instagram"></i>
+        </div>
+        <div class="footer-direita">
+            <p>Projeto fictício para fins de estudo.</p>
+        </div>
+    </footer>
+    <script src="https://kit.fontawesome.com/eb03b9e321.js" crossorigin="anonymous"></script>
+</body>
